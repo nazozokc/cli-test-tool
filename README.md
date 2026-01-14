@@ -14,7 +14,7 @@ Managed targets:
 
 ## Prerequisites
 
-- This repository is assumed to be cloned into `~/.config` (can be changed).
+- This repository is assumed to be cloned into `~/.config`.
 - Make sure to **back up** or remove any existing configurations before applying.
 
 ---
