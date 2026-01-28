@@ -1,0 +1,12 @@
+{
+  "name": "my-cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "my-cli": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc"
+  }
+}
