@@ -8,5 +8,11 @@
   "scripts": {
     "dev": "ts-node src/index.ts",
     "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^25.1.0"
+  },
+  "dependencies": {
+    "commander": "^14.0.2"
   }
 }
