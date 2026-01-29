@@ -30,4 +30,8 @@ coverage/
 
 # Temporary files
 *.tmp
-
+src/
+index.d.ts
+index.d.ts.map
+index.js.map
+index.js
