@@ -6,6 +6,7 @@ export const countWords = (text: string): number => {
   if (text.trim() === "") {
     return 0;
   }
+  // /\s+/ は「1個以上の空白文字」
   return text.split(/\s+/).length;
 };
 

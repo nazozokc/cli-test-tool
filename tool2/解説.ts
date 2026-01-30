@@ -19,7 +19,7 @@ export const countWords = (text: string): number => {
   // もし中身が空なら単語数は 0
   if (text.trim() === "") return 0;
 
-  // /\s+/ は「1個以上の空白文字」// commander は CLI を作るためのライブラリ
+// commander は CLI を作るためのライブラリ
 // コマンド・引数・ヘルプ表示などを全部やってくれる
 import { Command } from "commander";
 
@@ -163,4 +163,3 @@ import { runCLI } from "./cli/index.js";
 
 // CLI を起動
 runCLI();
-

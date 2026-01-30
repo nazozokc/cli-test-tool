@@ -49,7 +49,6 @@ export const length = (text: string): number => {
 
 
 
----
 
 
 // commander は CLIを作るためのライブラリ
