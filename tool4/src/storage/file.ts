@@ -14,4 +14,13 @@ export const loadNotes = (): Note[] => {
   if (!fs.existsSync(file)) {
     return [];
   }
+
+  return JSON.parse(fs.readFileSync(file, "utf-8"));
+};
+
+export const saveNotes = (notes: Note[]) => {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+  fs.writeFileSync(file, JSON.stringify(notes, null, 2));
 };
