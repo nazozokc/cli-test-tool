@@ -8,5 +8,9 @@
   "scripts": {
     "dev": "ts-node src/index.ts",
     "build": "tsc"
+  },
+  "dependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^5.9.3"
   }
 }
