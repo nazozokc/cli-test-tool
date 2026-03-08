@@ -24,3 +24,7 @@ updates:
     directory: "/wc"
     schedule:
       interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/fake-weather"
+    schedule:
+      interval: "daily"
