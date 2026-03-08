@@ -10,8 +10,15 @@ const runCLI = () => {
 
   program
     .command("gt")
-    .argument("git taiwa")
-    .action(async () => {
+    .argument("<text>")
+    .action(async (text) => {
+      await execa("git", ["status"]);
+      await execa("git", ["add", "."]);
+      await execa("git", ["commit", "-m", text]);
+      await execa("git", ["push"]);
+    });
 
-    })
-}
+  program.parse();
+};
+
+runCLI();
