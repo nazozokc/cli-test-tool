@@ -10,7 +10,7 @@
     "build": "tsc"
   },
   "devDependencies": {
-    "@types/node": "^25.1.0"
+    "@types/node": "^25.3.5"
   },
   "dependencies": {
     "commander": "^14.0.3"
