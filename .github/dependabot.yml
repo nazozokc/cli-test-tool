@@ -1,6 +1,26 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/"
+    directory: "/git-taiwa"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "npm"
+    directory: "/simple-note-cli"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "npm"
+    directory: "/simple-todo-cli"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "npm"
+    directory: "/text-util"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "npm"
+    directory: "/wc"
     schedule:
       interval: "daily"
