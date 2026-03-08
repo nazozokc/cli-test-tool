@@ -6,7 +6,7 @@ import { Command } from 'commander';
 
 
 const runCLI = () => {
-  const program = new Command;
+  const program = new Command();
 
   program.name("git-taiwa").description("git taiwa tool").version("v1.0.0");
 
