@@ -13,6 +13,8 @@ const runCLI = () => {
     .action(() => {
       consola.log(`tokyo: ${getTime()}`);
     });
+
+  program.parse();
 };
 
 runCLI();
