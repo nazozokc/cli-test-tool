@@ -28,3 +28,8 @@ updates:
     directory: "/fake-weather"
     schedule:
       interval: "daily"
+
+  - package-ecosystem: "npm"
+    directory: "/time"
+    schedule:
+      interval: "daily"
