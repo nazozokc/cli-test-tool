@@ -11,6 +11,7 @@ const runCLI = () => {
   program
     .command("hostname")
     .action(() => {
+      const hostname = os.hostname();
       consola.log(hostname);
     })
 
