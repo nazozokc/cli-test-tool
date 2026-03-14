@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import os from "os";
 import { consola } from "consola";
 import { Command } from "commander";
 
@@ -10,7 +11,7 @@ const runCLI = () => {
   program
     .command("hostname")
     .action(() => {
-
+      consola.log(hostname);
     })
 
   program.parse();
