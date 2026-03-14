@@ -15,6 +15,13 @@ const runCLI = () => {
       consola.log(hostname);
     })
 
+  program
+    .command("myname")
+    .action(() => {
+      const myname = os.userInfo();
+      consola.log(myname);
+    })
+
   program.parse();
 }
 
