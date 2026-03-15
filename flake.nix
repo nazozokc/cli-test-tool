@@ -68,7 +68,7 @@
             binName = "git-taiwa";
             buildCmd = "npx tsup src/index.ts --format esm";
             # nix build .#git-taiwa 後に出るhashをここに貼る
-            npmDepsHash = pkgs.lib.fakeHash;
+            npmDepsHash = "sha256-ge/GdDDC4/ntNai5FeR19NfXuWoxkzqf/1VvHP24wpE=";
           };
 
           note = mkTool {
@@ -76,7 +76,7 @@
             version = "0.1.0";
             src = ./simple-note-cli;
             binName = "note";
-            npmDepsHash = pkgs.lib.fakeHash;
+            npmDepsHash = "sha256-xXZDwfieS/NIsdpVbAC0rqz+8XQiYcQwhgGT1v8uX7Q=";
           };
 
           todo = mkTool {
@@ -84,7 +84,7 @@
             version = "0.1.0";
             src = ./simple-todo-cli;
             binName = "todo";
-            npmDepsHash = pkgs.lib.fakeHash;
+            npmDepsHash = "sha256-Uwt5lni9eVEQY83WRyOD96bgWrq2VL3T3mDONCC0Cso=";
           };
 
           wc = mkTool {
@@ -92,7 +92,7 @@
             version = "0.1.0";
             src = ./wc;
             binName = "wc-cli";
-            npmDepsHash = pkgs.lib.fakeHash;
+            npmDepsHash = "sha256-E8oMvueyhVqLfM2uIU7B68tWmRvkZ/xL1r7TXET9mLc=";
           };
 
           text-util = mkTool {
@@ -100,8 +100,10 @@
             version = "0.1.0";
             src = ./text-util;
             binName = "text-util";
-            npmDepsHash = pkgs.lib.fakeHash;
+            npmDepsHash = "sha256-lnXd29P+LWRHxmP/hIXULiYXNZ0P5V/fY6xH7nKVZJw=";
           };
+
+          default = self.packages.${system}.git-taiwa;
         };
 
         devShells.default = pkgs.mkShell {

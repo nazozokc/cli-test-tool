@@ -9,21 +9,21 @@ export const runCLI = () => {
   program
     .command("upper")
     .argument("<text>")
-    .action((text) => {
+    .action((text: string) => {
       console.log(toUpper(text));
     });
 
   program
     .command("lower")
     .argument("<text>")
-    .action((text) => {
+    .action((text: string) => {
       console.log(toLower(text));
     });
 
   program
     .command("length")
     .argument("<text>")
-    .action((text) => {
+    .action((text: string) => {
       console.log(length(text));
     });
 
