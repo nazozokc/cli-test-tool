@@ -13,6 +13,7 @@
     "@types/node": "^25.5.0"
   },
   "dependencies": {
-    "commander": "^14.0.3"
+    "commander": "^14.0.3",
+    "typescript": "^5.7.0"
   }
 }
