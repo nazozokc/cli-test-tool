@@ -11,7 +11,10 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "commander": "^14.0.3"
+    "commander": "^14.0.3",
+    "consola": "^3.4.2",
+    "fs": "^0.0.1-security",
+    "tsc": "^2.0.4"
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
