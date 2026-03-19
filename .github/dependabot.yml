@@ -34,7 +34,7 @@ updates:
     schedule:
       interval: "daily"
 
-  - package-ecosystem: "pnpm"
+  - package-ecosystem: "npm"
     directory: "/sisou-cli"
     schedule:
       interval: "daily"
