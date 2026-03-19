@@ -33,3 +33,8 @@ updates:
     directory: "/time"
     schedule:
       interval: "daily"
+
+  - package-ecosystem: "pnpm"
+    directory: "/sisou-cli"
+    schedule:
+      interval: "daily"
