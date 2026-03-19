@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "commander": "^14.0.3",
-    "fs": "^0.0.1-security"
-  }
-}
