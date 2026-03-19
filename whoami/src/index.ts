@@ -8,23 +8,17 @@ const runCLI = () => {
 
   program.name("name").description("host name check").version("v1.0.0");
 
-  program
-    .command("hostname")
-    .action(() => {
-      const hostname = os.hostname();
-      consola.log(hostname);
-    })
+  program.command("hostname").action(() => {
+    const hostname = os.hostname();
+    consola.log(hostname);
+  });
 
-  program
-    .command("myname")
-    .action(() => {
-      const myname = os.userInfo();
-      consola.log(myname);
-    })
+  program.command("myname").action(() => {
+    const myname = os.userInfo();
+    consola.log(myname);
+  });
 
   program.parse();
-}
+};
 
 runCLI();
-
-
