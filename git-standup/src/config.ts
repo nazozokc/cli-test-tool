@@ -19,3 +19,9 @@ export const loadConfig = (): Config => {
     return { repos: [] };
   }
 };
+
+export const saveConfig = (config: Config): void => {
+  fs.mkdirSync(path.dirname(getConfigPath()), { recursive: true });
+  const content = JSON.stringify(config);
+  fs.writeFileSync(getConfigPath(), content);
+};
