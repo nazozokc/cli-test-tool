@@ -2,14 +2,21 @@
   "name": "riaju-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "bin": {
+    "riaju": "./dist/index.js"
+  },
   "scripts": {
+    "build": "tsc && node -e \"const fs=require('fs'); const p=\"dist/index.js\"; const c=fs.readFileSync(p,'utf8'); if(!c.startsWith('#!')) fs.writeFileSync(p,'#! /usr/bin/env node\\n'+c)\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.32.1",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
   "dependencies": {
     "commander": "^14.0.3",
     "consola": "^3.4.2"
