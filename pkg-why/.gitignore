@@ -1,9 +1,11 @@
 # Dependencies
 node_modules/
 
+# Bun
+.bun/
+
 # Build output
 dist/
-build/
 
 # IDE
 .idea/
@@ -17,7 +19,7 @@ Thumbs.db
 
 # Logs
 *.log
-npm-debug.log*
+bun-debug.log*
 
 # Environment
 .env
@@ -29,7 +31,3 @@ coverage/
 
 # Cache
 .cache/
-.parcel-cache/
-
-# pnpm
-.pnpm-store/
