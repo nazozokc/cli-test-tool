@@ -8,16 +8,16 @@ const runCLI = () => {
     .name("nixlist")
     .description("nix installed package tool")
     .version("1.0.0")
-    .action(async () => {
+    .action(() => {
       try {
-        const stdout = await execSync(`nix profile list` { encoding: `utf-8`});
-        consola.log(stdout)
+        const stdout = execSync(`nix profile list`, { encoding: `utf-8` });
+        consola.log(stdout);
       } catch (error) {
         consola.error("エラーが発生しました");
       }
     });
 
-    program.parse();
+  program.parse();
 };
 
-runCLI()
+runCLI();
