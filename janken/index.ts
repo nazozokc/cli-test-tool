@@ -1,1 +1,3 @@
-console.log("Hello via Bun!");
+import { cpnsola } from "consola";
+import { Command } from "commander";
+
