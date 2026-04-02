@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "matchFileNames": ["calc/**", "gat/**", "janken/**", "nix-installed-pkgs/**", "pkg-why/**"],
+      "bun": true
+    }
+  ],
+  "npm": {
+    "minimumReleaseAge": "3 days"
+  },
+  "schedule": ["every 3 hours"]
+}
