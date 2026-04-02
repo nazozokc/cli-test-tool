@@ -10,10 +10,19 @@ const runCLI = () => {
     .name("gat")
     .description("file view tool")
     .argument("<files...>")
-    .action((files: string[]) => {
+    .option("-n, --number", "行番号を表示")
+    .action((files: string[], option: { number: boolean }) => {
       for (const file of files) {
         const view = readFileSync(file, "utf-8");
-        consola.log(view);
+
+        if (option.number === true) {
+          const line = view.split("\n");
+          line.forEach((line, i) => {
+            consola.log(`${i + 1}  ${line}`);
+          });
+        } else {
+          consola.log(view);
+        }
       }
     });
 
@@ -21,4 +30,3 @@ const runCLI = () => {
 };
 
 runCLI();
-
