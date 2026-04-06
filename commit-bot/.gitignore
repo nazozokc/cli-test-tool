@@ -1,0 +1,37 @@
+# dependencies
+node_modules/
+
+# bun
+.bun/
+
+# build output
+dist/
+out/
+
+# next
+.next/
+
+# svelte
+.svelte-kit/
+
+# environment variables
+.env
+.env.*
+!.env.example
+
+# debug
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# lockfiles (keep bun.lockb)
+package-lock.json
+yarn.lock
