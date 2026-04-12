@@ -15,8 +15,7 @@ CLIツールを開発するためのテスト用ディレクトリ。
 - [pkg-why](./pkg-why) - Nixパッケージ検索
 - [riaju-cli](./riaju-cli) - 利他主義CLI
 - [shell-list](./shell-list) - シェル一覧CLI
-- [simple-note-cli](./simple-note-cli) - シンプルなメモCLI
-- [simple-todo-cli](./simple-todo-cli) - シンプルなTODO管理CLI
+
 - [sisou-cli](./sisou-cli) - 思考CLI
 - [text-util](./text-util) - テキスト処理CLI
 - [time](./time) - 日時処理CLI
