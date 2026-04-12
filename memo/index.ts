@@ -1,6 +1,6 @@
 import { Command } from "commander";
 import { consola } from "consola";
-import { read, write } from "./src/fs.ts";
+import { read, write, done, del } from "./src/fs.ts";
 
 const runCLI = () => {
   const program = new Command();
@@ -25,8 +25,21 @@ const runCLI = () => {
     consola.log(memos);
   });
 
+  program
+    .command("done")
+    .argument("<number>")
+    .action((number) => {
+      done(Number(number));
+    });
+
+  program
+    .command("delete")
+    .argument("<number>")
+    .action((number) => {
+      del(Number(number));
+    });
+
   program.parse();
 };
 
 runCLI();
-

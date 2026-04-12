@@ -27,3 +27,21 @@ export const write = (memos: memo[]): void => {
     consola.error("保存することができませんでした");
   }
 };
+
+export const done = (id: number): void => {
+  const memo = read();
+  const updated = memo.map((memo) => {
+    if (memo.id === id) {
+      return { ...memo, done: true };
+    } else {
+      return memo;
+    }
+  });
+  write(updated);
+};
+
+export const del = (id: number): void => {
+  const memo = read();
+  const number = memo.filter((n) => n.id !== id);
+  write(number);
+};
